@@ -1,0 +1,31 @@
+html {
+
+}
+
+body {
+	background-color: #fff;
+	width: 800px;
+}
+
+div#top {
+	display: flex;
+	flex-direction: row;
+	border: solid 1px black;
+}
+
+.logo {
+	text-decoration: none;
+	border: solid 1px black;
+	margin-right: 50%;
+	min-width: 70px;
+}
+
+#spacer {
+	width: 80%;
+}
+
+#login {
+	min-width: 70px;
+	border: solid 1px black;
+	margin-left: 10%;
+}
