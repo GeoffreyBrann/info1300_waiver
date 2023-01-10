@@ -5,7 +5,7 @@
 }
 
 header {
-	margin: 10px 0px 10px 0px;
+	margin: 10px 0px 0px 0px;
 /*	max-width: 1280px;*/
 }
 
@@ -151,13 +151,60 @@ a.block {
 
 /*start first section of main content*/
 
+div.first-sec {
+	background-color: #bcebeb;
+	padding: 20px 10px 40px 10px;
+	min-width: 300px;
+/*	border: solid black 1px;*/
+}
+
+.first-sec div {
+	max-width: 800px;
+	margin: auto;
+}
+
+.first-sec h1 {
+	padding: 20px;
+	margin-bottom: 10px;
+/*	border: solid black 1px;*/
+}
+
+.first-sec p {
+	width: 70%;
+	max-width: 583px;
+	margin-left: 20px;
+/*	clear: right;*/
+	font-size: 1.25em;
+/*	border: solid black 1px;*/
+}
+
+.first-sec button {
+/*	float: right;*/
+	/*height: 75px;
+	width: 120px;*/
+	margin-top: 25px;
+	margin-left: 20px;
+	border-radius: 99px;
+	font-size: 1.2em;
+	background-color: #CCCCCC;
+	transition-duration: 0.4s;
+}
+
+.first-sec button a {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 1.2em;
+	padding: 15px;
+	line-height: 1.7;
+	color: black;
+}
+
+.first-sec button:hover {
+  	background-color: #DDDDDD;
+}
 
 
-
-
-
-
-
+/*end first section of main content*/
 
 
 
@@ -172,6 +219,7 @@ div.main {
 	overflow: auto;
 }
 
-div.first-sec {
-
+.main div.container {
+	flex-direction: column;
 }
+
