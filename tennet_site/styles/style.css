@@ -220,6 +220,21 @@ div.main {
 	padding: 30px;
 }
 
+article {
+	margin: 15px 15px 15px 0px;
+}
+
+h2 {
+	margin: 20px 0px 20px 0px;
+}
+
+h3 {
+	margin: 15px 0px 15px 0px;
+}
+
+h3.long-title {
+	min-width: 230px;
+}
 
 /*end main content*/
 
