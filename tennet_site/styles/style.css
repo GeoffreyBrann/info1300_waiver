@@ -3,15 +3,23 @@
 	padding: 0px;
 	margin: 0px;
 }
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	background-color: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    min-height: calc(100vh - 50px);
+}
 
 header {
 	margin: 10px 0px 0px 0px;
 /*	max-width: 1280px;*/
-}
-
-body {
-	background-color: #fff;
-	font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -22,7 +30,6 @@ body {
 /*	align-items: center;*/
 	justify-content: space-between;
 }
-
 
 /*start top*/
 
@@ -223,3 +230,14 @@ div.main {
 	flex-direction: column;
 }
 
+
+
+/*footer*/
+
+footer {
+   background-color: #EDEEEE;
+   color: black;
+   text-align: center;
+   padding: 5px;
+   height: 50px;
+}

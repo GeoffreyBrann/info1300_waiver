@@ -7,98 +7,106 @@
 	<title>TenneT</title>
 </head>
 <body>
-	<header>
-		<!-- Top row, containing a logo and the login button -->
-		<span class="logo">TenneT</span>
-		<button type="button" id="login"><a href="login.html" target="_blank">Log In</a></button>
+	<div class="wrapper">
+		<header>
+			<!-- Top row, containing a logo and the login button -->
+			<span class="logo">TenneT</span>
+			<button type="button" id="login"><a href="login.html" target="_blank">Log In</a></button>
 
-		<!-- flexbox navbar -->
-		<!-- <div>
+			<!-- flexbox navbar -->
+			<!-- <div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="research.html">Research Overview</a></li>
+						<li><a href="resources.html">Renting Resources</a></li>
+					</ul>
+				</nav>
+			</div> -->
+
 			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="research.html">Research Overview</a></li>
-					<li><a href="resources.html">Renting Resources</a></li>
-				</ul>
-			</nav>
-		</div> -->
+				<div class="container">
 
-		<nav>
-			<div class="container">
-
-				<!-- spacing div to make alignment correct -->
-				<div class="left-spacer"></div>
+					<!-- spacing div to make alignment correct -->
+					<div class="left-spacer"></div>
 
 
-				<div class="menu">
-					<a href="index.html" class="block" id="home">Home</a>
-					<!-- class block toggles their view when the screen is narrow -->
-					<a class="" href="research.html">Research Overview</a>
-					<a class="" href="resources.html">Renting Resources</a>
-					<a class=""href="login.html" target="_blank">Log In</a>
+					<div class="menu">
+						<a href="index.html" class="block" id="home">Home</a>
+						<!-- class block toggles their view when the screen is narrow -->
+						<a class="" href="research.html">Research Overview</a>
+						<a class="" href="resources.html">Renting Resources</a>
+						<a class=""href="login.html" target="_blank">Log In</a>
+					</div>
+
+					<!-- another spacing div -->
+					<div></div>
+
+					<button class="hamburger" id="toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 				</div>
+			</nav>
+		</header>
 
-				<!-- another spacing div -->
-				<div></div>
-
-				<button class="hamburger" id="toggle">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
+		
+		<div class="first-sec">
+			<div>
+				<h1>TenneT is a network</h1>
+				<p>
+					We bring together local tenants and organizers to create a safe, private, and secure space where tenants can create a community.
+				</p>
+				<button type="button"><a href="login.html" target="_blank">Go to TenneT</a></button>
 			</div>
-		</nav>
-	</header>
+		</div>
 
-	
-	<div class="first-sec">
-		<div>
-			<h1>TenneT is a network</h1>
-			<p>
-				We bring together local tenants and organizers to create a safe, private, and secure space where tenants can create a community.
-			</p>
-			<button type="button"><a href="login.html" target="_blank">Go to TenneT</a></button>
+
+
+
+
+		<div class="main">
+			<article>
+				<h2>Why Tennet?</h2>
+				<p>
+					TenneT is the only network that was built to protect your privacy. We rely on three principles to ensure that TenneT is the best network for renters.
+				</p>
+			</article>
+
+			<div class="container">
+				<article>
+					<h3>Personalization</h3>
+					<p>
+						TenneT was built by tenants for tenants. To ensure you have the best experience possible, there are extensive customization options for privacy and beyond!
+					</p>
+				</article>
+
+				<article>
+					<h3>Privacy and Security</h3>
+					<p>
+						TenneT is the only network that uses end-to-end encryption as well as Contextual Integrity to ensure that your interactions are kept private from anyone you might want to keep out: whether inside or outside of our network.
+					</p>
+				</article>
+
+				<article>
+					<h3>Community Moderation</h3>
+					<p>
+						Content moderation is performed both algorithmically and through a set of thoroughly vetted community tenant leaders, to ensure that your speech is always respected.
+					</p>
+				</article>
+			</div>
 		</div>
 	</div>
 
+	<footer>
+  		<p>Author: Geoffrey Brann<br>
+  		<a href="mailto:gwb73@cornell.edu">gwb73@cornell.edu</a></p>
+	</footer>
 
 
-
-
-	<div class="main">
-		<article>
-			<h2>Why Tennet?</h2>
-			<p>
-				TenneT is the only network that was built to protect your privacy. We rely on three principles to ensure that TenneT is the best network for renters.
-			</p>
-		</article>
-
-		<div class="container">
-			<article>
-				<h3>Personalization</h3>
-				<p>
-					TenneT was built by tenants for tenants. To ensure you have the best experience possible, there are extensive customization options for privacy and beyond!
-				</p>
-			</article>
-
-			<article>
-				<h3>Privacy and Security</h3>
-				<p>
-					TenneT is the only network that uses end-to-end encryption as well as Contextual Integrity to ensure that your interactions are kept private from anyone you might want to keep out: whether inside or outside of our network.
-				</p>
-			</article>
-
-			<article>
-				<h3>Community Moderation</h3>
-				<p>
-					Content moderation is performed both algorithmically and through a set of thoroughly vetted community tenant leaders, to ensure that your speech is always respected.
-				</p>
-			</article>
-		</div>
-	</div>
 
 	<script src="scripts/jquery-3.6.3.min.js" type="text/javascript"></script>
 	<script src="scripts/script.js" type="text/javascript"></script>
-	
 </body>
 </html>
