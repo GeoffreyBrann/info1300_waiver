@@ -1,31 +1,76 @@
 html {
-
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
 }
 
 body {
 	background-color: #fff;
-	width: 800px;
+	font-family: Helvetica, Arial, sans-serif;
 }
+
+/*start top*/
 
 div#top {
-	display: flex;
-	flex-direction: row;
-	border: solid 1px black;
+	/*display: flex;
+	flex-direction: row;*/
+/*	min-width: 800px;*/
 }
+
+/*div.contain-left {
+	width: 15%;
+	border: solid 1px black;
+	padding: 10px 0;
+}
+
+div.contain-right {
+	width: 15%;
+	border: solid 1px black;
+	position: relative;
+	left: 70%;
+	text-align: center;
+	padding: 10px 0;
+}*/
 
 .logo {
-	text-decoration: none;
-	border: solid 1px black;
-	margin-right: 50%;
-	min-width: 70px;
-}
-
-#spacer {
-	width: 80%;
+/*	border: solid 1px black;*/
+/*	min-height: 50px;*/
+	text-align: center;
+	padding: 0px 0;
+	font-size: 3em;
+	font-variant: small-caps;
+	font-family: Catamaran, Helvetica, sans-serif;
+/*	min-width: 150px;*/
 }
 
 #login {
-	min-width: 70px;
-	border: solid 1px black;
-	margin-left: 10%;
+/*	border: solid 1px black;*/
+	height: 50px;
+	width: 80px;
+	position: absolute;
+	right: 8px;
+	top: 13px;
+}
+
+button > a {
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+button > a:visited {
+	text-decoration: none;
+	color: black;
+}
+/*end top*/
+
+/*start navbar*/
+
+div.main {
+	width: 800px;
+	margin: auto;
+}
+
+div.first-sec {
+
 }
