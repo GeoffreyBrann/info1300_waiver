@@ -9,11 +9,12 @@
 </head>
 <body>
 	<header>
-		<div>
-			<span><a href="index.html">TenneT</a></span>
-			<a href="login.html" target="_blank">Log In</a>
-		</div>
-		<div>
+		<!-- Top row, containing a logo and the login button -->
+		<span class="logo">TenneT</span>
+		<button type="button" id="login"><a href="login.html" target="_blank">Log In</a></button>
+
+		<!-- flexbox navbar -->
+		<!-- <div>
 			<nav>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -21,7 +22,38 @@
 					<li><a href="resources.html">Renting Resources</a></li>
 				</ul>
 			</nav>
-		</div>
+		</div> -->
+
+		<nav>
+			<div class="container">
+
+				<!-- spacing div to make alignment correct -->
+				<div class="left-spacer"></div>
+
+
+				<div class="menu">
+					<a href="index.html" class="block" id="home">Home</a>
+					<!-- class block toggles their view when the screen is narrow -->
+					<a class="" href="research.html">Research Overview</a>
+					<a class="" href="resources.html">Renting Resources</a>
+					<a class=""href="login.html" target="_blank">Log In</a>
+				</div>
+
+				<!-- another spacing div -->
+				<div></div>
+
+				<button class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</nav>
+
+
+
+
+		
 	</header>
 
 	<div>
