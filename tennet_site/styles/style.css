@@ -52,7 +52,8 @@ button#login a:visited {
 	max-width: 1280px;
 	margin: 0 auto;
 	display: flex;
-	align-items: center;
+	flex-direction: row;
+/*	align-items: center;*/
 	justify-content: space-between;
 }
 
@@ -63,15 +64,32 @@ nav {
 	margin-top: 10px;
 }
 
-.menu {
+.left-spacer {
 	display: none;
 }
 
+.menu {
+	flex-direction: column;
+}
+
+.menu a.is-active {
+	display: block;
+	
+}
+
+
 .menu a {
+/*	change this to block to show the mini-menu*/
+	display: none;
+
 	margin: 0px;
 	text-decoration: none;
 	font-weight: 600;
 	padding: 16px 30px;
+}
+
+a.block {
+	display: block;
 }
 
 .menu a:active, .menu a:hover {
@@ -84,8 +102,9 @@ nav {
 
 
 .hamburger {
-	display: block;
-	position: relative;
+	float: right;
+/*	display: block;*/
+/*	position: relative;*/
 /*	z-index: 1;*/
 	user-select: none;
 	appearance: none;
@@ -94,6 +113,7 @@ nav {
 	background: none;
 	cursor: pointer;
 	padding: 13px;
+	height: 50px;
 }
 
 .hamburger span {
@@ -109,12 +129,21 @@ nav {
 }
 
 @media (min-width: 768px) {
+	.left-spacer {
+		display: block;
+	}
+
 	.hamburger {
 		display: none;
 	}
 
 	.menu {
 		display: flex;
+		flex-direction: row;
+	}
+
+	.menu a {
+		display: inline-block;
 	}
 }
 
