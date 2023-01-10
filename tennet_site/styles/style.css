@@ -31,6 +31,11 @@ header {
 	justify-content: space-between;
 }
 
+figure {
+	text-align: center;
+	margin: 15px;
+}
+
 /*start top*/
 
 .logo {
@@ -218,6 +223,8 @@ div.first-sec {
 
 div.main {
 	padding: 30px;
+	max-width: 768px;
+	margin: auto;
 }
 
 article {
@@ -236,23 +243,11 @@ h3.long-title {
 	min-width: 230px;
 }
 
-/*end main content*/
-
-
-
-
-
-
-div.main {
-	max-width: 768px;
-	margin: auto;
-/*	overflow: auto;*/
-}
-
 .main div.container {
 	flex-direction: column;
 }
 
+/*end main content*/
 
 
 /*footer*/
@@ -264,3 +259,7 @@ footer {
    padding: 5px;
    height: 50px;
 }
+
+/*end footer*/
+
+
