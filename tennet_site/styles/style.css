@@ -160,14 +160,15 @@ a.block {
 
 div.first-sec {
 	background-color: #bcebeb;
-	padding: 20px 10px 40px 10px;
-	min-width: 300px;
 /*	border: solid black 1px;*/
+
 }
 
 .first-sec div {
-	max-width: 800px;
 	margin: auto;
+	max-width: 768px;
+	padding: 20px 0px 60px 10px;
+	min-width: 300px;
 }
 
 .first-sec h1 {
@@ -213,7 +214,14 @@ div.first-sec {
 
 /*end first section of main content*/
 
+/*main content*/
 
+div.main {
+	padding: 30px;
+}
+
+
+/*end main content*/
 
 
 
@@ -223,7 +231,7 @@ div.first-sec {
 div.main {
 	max-width: 768px;
 	margin: auto;
-	overflow: auto;
+/*	overflow: auto;*/
 }
 
 .main div.container {
