@@ -1,3 +1,3 @@
-$(".hamburger").click(function(){
+$("#toggle").click(function(){
   $("#home").siblings().toggleClass("block");
 });
