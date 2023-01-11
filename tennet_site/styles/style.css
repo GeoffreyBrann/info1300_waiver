@@ -338,6 +338,11 @@ input {
 	height: 30px;
 	background-color: #bcebeb;
 	color: black;
+	border-radius: 10px;
+}
+
+#submit:hover {
+	background-color: #add0cd;
 }
 
 #signup {
@@ -348,4 +353,25 @@ input {
 	color: black;
 	border-radius: 10px;
 
+}
+
+#signup:hover {
+	background-color: #75a596;
+}
+
+@media (min-width: 768px) {
+	#login-box {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#login-wrapper {
+		margin: 20px 40px 0px 0px;
+	}
+
+	div > h2 {
+		display: inline-block;
+		text-align: left;
+		margin-top: -20px;
+	}
 }
