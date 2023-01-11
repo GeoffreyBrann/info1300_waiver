@@ -65,13 +65,13 @@ nav a {
 	top: 15px;
 }
 
-button#login a {
+a button#login {
 	text-decoration: none;
 	font-weight: 800;
 	font-size: 1.5em;
 }
 
-button#login a:visited {
+a:visited button#login {
 	text-decoration: none;
 	color: black;
 }
@@ -200,23 +200,26 @@ div.first-sec {
 /*	border: solid black 1px;*/
 }
 
-.first-sec button {
+/*.first-sec button {
 /*	float: right;*/
 	/*height: 75px;
 	width: 120px;*/
-	margin-top: 25px;
+	/*margin-top: 25px;
 	margin-left: 20px;
 	border-radius: 99px;
 	font-size: 1.2em;
 	background-color: #CCCCCC;
 	transition-duration: 0.4s;
-}
+}*/
 
-.first-sec button a {
+.first-sec a > button  {
+	margin-top: 25px;
+	margin-left: 20px;
+	border-radius: 99px;
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 1.2em;
-	padding: 15px;
+	padding: 5px;
 	line-height: 1.7;
 	color: black;
 }
