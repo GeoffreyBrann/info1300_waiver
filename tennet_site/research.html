@@ -3,64 +3,105 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<title>Research Overview</title>
 </head>
 <body>
-	<header>
-		<div>
-			<span><a href="index.html">TenneT</a></span>
-			<a href="login.html" target="_blank">Log In</a>
-		</div>
-		<div>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="research.html">Research Overview</a></li>
-					<li><a href="resources.html">Renting Resources</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
 
-	<div>
+	<div class="wrapper">
+		<header>
+			<!-- Top row, containing a logo and the login button -->
+			<span class="logo">TenneT</span>
+			<button type="button" id="login"><a href="login.html" target="_blank">Log In</a></button>
+
+			<!-- flexbox navbar -->
+			<!-- <div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="research.html">Research Overview</a></li>
+						<li><a href="resources.html">Renting Resources</a></li>
+					</ul>
+				</nav>
+			</div> -->
+
+			<nav>
+				<div class="container">
+
+					<!-- spacing div to make alignment correct -->
+					<div class="left-spacer"></div>
+
+
+					<div class="menu">
+						<a href="index.html" class="block" id="home">Home</a>
+						<!-- class block toggles their view when the screen is narrow -->
+						<a class="" href="research.html">Research Overview</a>
+						<a class="" href="resources.html">Renting Resources</a>
+						<a class=""href="login.html" target="_blank">Log In</a>
+					</div>
+
+					<!-- another spacing div -->
+					<div></div>
+
+					<button class="hamburger" id="toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</nav>
+
+
+
+
+			
+		</header>
+
+		<div class="first-sec">
+
 			<h1>Research Overview</h1>
 
-		<article>
-			<h2>Problem Statement</h2>
-			<p>
-				How might we meet the needs of local Ithaca tenants in creating an ethical, private, safe, and functional digital communication platform for tenants and organizers to communicate about housing?
-			</p>
-			<figure>
-				<img width = 300px src="images/poster.jpg">
-				<figcaption>Presenting at Milstein Expo: Photo Credits Milstein Program</figcaption>
-			</figure>
-			
-		</article>
+		</div>
 
-		<article>
-			<h2>Background Info</h2>
-			<p>
-				When forming policies to propose to the NYC Mayor’s Office, the concept of a social media platform for tenants was a central focus: creating a way for tenants to communicate with each other, to discuss their situations as tenants free from prying eyes, and to gain confidence to pursue their rights and to learn their rights from tenants associations.
-				<br><br>
-				To achieve this level of privacy and security, this project was inspired by <a href="https://nissenbaum.tech.cornell.edu/papers/Going%20Against%20the%20(Appropriate)%20Flow.pdf" target="_blank">Going Against the (Appropriate) Flow</a>, a project that attempted to fit the framework of contextual integrity (a way to understand privacy) onto privacy policies of companies like Facebook and Twitter. Somewhat unsurprisingly, these policies did not outline with sufficient specificity the new, and maybe undesirable, flows of personal information that using the product would create. This gave me the idea to, instead of applying a framework of privacy after the platform was created, build the platform around the framework.
-			</p>
-		</article>
+		<div class="main">
+			<article>
+				<h2>Problem Statement</h2>
+				<p>
+					How might we meet the needs of local Ithaca tenants in creating an ethical, private, safe, and functional digital communication platform for tenants and organizers to communicate about housing?
+				</p>
+				<figure>
+					<img width="300px" height="192px" src="images/poster_small.jpg" class="img-small">
+					<img width="600px" height="383px" src="images/poster.jpg" class="img-big">
+					<figcaption>Presentation of research on an Ethical Social Media Platform for Local Tenants at the Milstein Student Research Expo: Photo Credits <a href="https://milstein-program.as.cornell.edu/ethical-social-media-platform-tenants" target="_blank">Milstein Program</a></figcaption>
+				</figure>
+				
+			</article>
 
-		<article>
-			<h2>Research Methodology</h2>
-			<p>
-				Research for this project consisted of identifying papers concerned with trusted and secure channels of communications in various contexts online or offline, along with ethnographic interviews. Interviews conducted focused on the experiences of tenants—particularly those who have had troubles with housing as a result of miscommunication or troubles with landlords.
-				<br><br>
-				After the interviews were transcribed, the transcripts were analyzed for trends relating to measures of trust, confidence and mode of communication. In synthesizing these trends, valuable information about privacy preferences can easily be applied to a multitude of communication methods such as community guidelines in a virtual classroom setting.
-			</p>
-		</article>
+			<article>
+				<h2>Background Info</h2>
+				<p>
+					When forming policies to propose to the NYC Mayor’s Office, the concept of a social media platform for tenants was a central focus: creating a way for tenants to communicate with each other, to discuss their situations as tenants free from prying eyes, and to gain confidence to pursue their rights and to learn their rights from tenants associations.
+					<br><br>
+					To achieve this level of privacy and security, this project was inspired by <a href="https://nissenbaum.tech.cornell.edu/papers/Going%20Against%20the%20(Appropriate)%20Flow.pdf" target="_blank">Going Against the (Appropriate) Flow</a>, a project that attempted to fit the framework of contextual integrity (a way to understand privacy) onto privacy policies of companies like Facebook and Twitter. Somewhat unsurprisingly, these policies did not outline with sufficient specificity the new, and maybe undesirable, flows of personal information that using the product would create. This gave me the idea to, instead of applying a framework of privacy after the platform was created, build the platform around the framework.
+				</p>
+			</article>
 
-		<article>
-			<h2>Contextual Integrity</h2>
-			<p>
-				Contextual Integrity (CI) is a way to understand privacy through the flow of information. Rather than determining a private sphere, or regarding certain information as private, it takes an individual information flow in context and determines if privacy has been breached.
-				<br>
-				CI breaks an information flow down into five characteristics:
+			<article>
+				<h2>Research Methodology</h2>
+				<p>
+					Research for this project consisted of identifying papers concerned with trusted and secure channels of communications in various contexts online or offline, along with ethnographic interviews. Interviews conducted focused on the experiences of tenants—particularly those who have had troubles with housing as a result of miscommunication or troubles with landlords.
+					<br><br>
+					After the interviews were transcribed, the transcripts were analyzed for trends relating to measures of trust, confidence and mode of communication. In synthesizing these trends, valuable information about privacy preferences can easily be applied to a multitude of communication methods such as community guidelines in a virtual classroom setting.
+				</p>
+			</article>
+
+			<article>
+				<h2>Contextual Integrity</h2>
+				<p>
+					Contextual Integrity (CI) is a way to understand privacy through the flow of information. Rather than determining a private sphere, or regarding certain information as private, it takes an individual information flow in context and determines if privacy has been breached.
+					<br>
+					CI breaks an information flow down into five characteristics:
+				</p>
 				<ol>
 					<li>Sender</li>
 					<li>Subject</li>
@@ -68,18 +109,29 @@
 					<li>Recipient</li>
 					<li>Transmission Principle</li>
 				</ol>
-				Senders send the information, recipients receive it. The subject of the information is who the information is about, and the information type could be healthcare, or education, or information from some other domain. The transmission principle determines in what situations this information flow occurs: with knowledge and consent of the sender, or without the sender's knowledge, or only once etc.
-			</p>
-			<figure>
-				<img width = 300px src="images/ci_diagram.webp">
-				<figcaption><a href="https://www.dli.tech.cornell.edu/post/privacy-policies-as-contextual-integrity-beyond-rules-compliance">Contextual Integrity Diagram</a></figcaption>
-			</figure>			
-			<p>
-				Lastly, this flow is placed in a certain context, and if determined to be an appropriate flow in an appropriate context, then it is considered private. For example, speaking to a doctor about a personal health issue of your own volition is appropriate in a healthcare context, but less so if you are talking on the subway.
-				<br><br>
-				Succesfully implementing this conception of privacy into our network will hopefully set a precedent that more concrete standards of privacy can be observed online, while also serving as real practical application of the theory.
-			</p>
-		</article>
+				<p>
+					Senders send the information, recipients receive it. The subject of the information is who the information is about, and the information type could be healthcare, or education, or information from some other domain. The transmission principle determines in what situations this information flow occurs: with knowledge and consent of the sender, or without the sender's knowledge, or only once etc.
+				</p>
+				<figure>
+					<img width = "600px" height="259px" class="img-big" src="images/ci_diagram.jpg">
+					<img width = "300px" height="130px" class="img-small" src="images/ci_diagram.jpg">
+					<figcaption>Contextual Integrity Diagram: Credit <a href="https://twitter.com/ynotez/status/1250578500588879873" target="_blank">Yan Shvartshnaider</a></figcaption>
+				</figure>			
+				<p>
+					Lastly, this flow is placed in a certain context, and if determined to be an appropriate flow in an appropriate context, then it is considered private. For example, speaking to a doctor about a personal health issue of your own volition is appropriate in a healthcare context, but less so if you are talking on the subway.
+					<br><br>
+					Succesfully implementing this conception of privacy into our network will hopefully set a precedent that more concrete standards of privacy can be observed online, while also serving as real practical application of the theory.
+				</p>
+			</article>
+		</div>
 	</div>
+
+	<footer>
+  		<p>Author: Geoffrey Brann<br>
+  		<a href="mailto:gwb73@cornell.edu">gwb73@cornell.edu</a></p>
+	</footer>
+
+	<script src="scripts/jquery-3.6.3.min.js" type="text/javascript"></script>
+	<script src="scripts/script.js" type="text/javascript"></script>
 </body>
 </html>
