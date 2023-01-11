@@ -19,7 +19,6 @@ body {
 
 header {
 	margin: 10px 0px 0px 0px;
-/*	max-width: 1280px;*/
 }
 
 .container {
@@ -27,7 +26,6 @@ header {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
-/*	align-items: center;*/
 	justify-content: space-between;
 }
 
@@ -127,9 +125,6 @@ a.block {
 
 .hamburger {
 	float: right;
-/*	display: block;*/
-/*	position: relative;*/
-/*	z-index: 1;*/
 	user-select: none;
 	appearance: none;
 	border: none;
@@ -149,7 +144,6 @@ a.block {
 
 	border-radius: 6px;
 	background-color: black;
-/*	z-index: 1;*/
 }
 
 @media (min-width: 768px) {
@@ -178,8 +172,6 @@ a.block {
 
 div.first-sec {
 	background-color: #bcebeb;
-/*	border: solid black 1px;*/
-
 }
 
 .first-sec div {
@@ -192,7 +184,6 @@ div.first-sec {
 .first-sec h1 {
 	padding: 20px;
 	margin-bottom: 10px;
-/*	border: solid black 1px;*/
 }
 
 .first-sec p {
@@ -200,22 +191,8 @@ div.first-sec {
 	max-width: 583px;
 	margin-left: 20px;
 	margin-bottom: 30px;
-/*	clear: right;*/
 	font-size: 1.25em;
-/*	border: solid black 1px;*/
 }
-
-/*.first-sec button {
-/*	float: right;*/
-	/*height: 75px;
-	width: 120px;*/
-	/*margin-top: 25px;
-	margin-left: 20px;
-	border-radius: 99px;
-	font-size: 1.2em;
-	background-color: #CCCCCC;
-	transition-duration: 0.4s;
-}*/
 
 .first-sec a {
 	width: 110px;
