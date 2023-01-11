@@ -319,18 +319,33 @@ div > h2 {
 	border-radius: 5px;
 	background-color: #EDEEEE;
 	padding: 20px;
-	width: 300px;
+	width: 250px;
 	margin: auto;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 10px;
 }
 
 input {
-	margin: 5px;
+	margin: 10px;
+	line-height: 2em;
 }
 
-#register-submit {
+#submit {
 	display: block;
 	margin: auto;
+	margin-bottom: 10px;
+	width: 75px;
+	height: 30px;
+	background-color: #bcebeb;
+	color: black;
+}
+
+#signup {
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	background-color: #8dcbb7;
+	color: black;
+	border-radius: 10px;
 
 }
