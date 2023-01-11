@@ -300,3 +300,37 @@ ol, ul {
 li {
 	line-height: 1.5;
 }
+
+/*end research.html*/
+
+/*start login.html*/
+body > div.container {
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	align-content: center;
+}
+
+div > h2 {
+	display: none;
+}
+
+#login-wrapper {
+	border-radius: 5px;
+	background-color: #EDEEEE;
+	padding: 20px;
+	width: 300px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input {
+	margin: 5px;
+}
+
+#register-submit {
+	display: block;
+	margin: auto;
+
+}

@@ -3,30 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<title>TenneT Login</title>
 </head>
 <body>
-	<div>
+	
+	<div class="container main">
 		<div>
 			<h1>TenneT</h1>
 			<h2>Your local tenant community is one click away</h2>
 		</div>
-		<div>
+		<div id="login-wrapper">
 			<form>
-			  	<div class="mb-3">
-				    <label for="exampleInputEmail1" class="form-label">Email address</label>
-				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-				    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-			  	</div>
-			  	<div class="mb-3">
-				    <label for="exampleInputPassword1" class="form-label">Password</label>
-				    <input type="password" class="form-control" id="exampleInputPassword1">
-			  	</div>
-			  	<button type="submit" class="btn btn-primary">Log In</button>
-			</form>
-			<a class="btn btn-primary" href="#" role="button">Sign Up</a>
+			      	<input type="email" name="user-email" placeholder="Email"/>
+
+			      	<input type="password" name="pwd" placeholder="Password"/>
+			    
+			    
+			    <button type="submit" name="submitLogin" id="register-submit">Log In</button>
+			 </form>
+			 <hr>
+			<button type="button">Sign Up</button>
 		</div>
 	</div>
 
