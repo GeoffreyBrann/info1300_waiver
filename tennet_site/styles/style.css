@@ -293,8 +293,8 @@ figcaption {
 	margin: 10px;
 }
 
-ol {
-	margin-left: 40px;
+ol, ul {
+	margin: 10px 10px 10px 40px;
 }
 
 li {
